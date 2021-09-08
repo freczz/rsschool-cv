@@ -24,7 +24,3 @@
 ## Education
 *Belarusian State University of Informatics and Radioelectronics, Faculty of Computer-Aided Design*
 
-## Languages
-* ***Russian:*** *native*
-* ***English:*** *Pre-Intermediate (A2)*
-* ***French:*** *Pre-Intermediate (A2)*
