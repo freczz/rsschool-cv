@@ -203,7 +203,7 @@ header .header__nav .header__items .header__item a:hover:after {
 
 .about .about__title::before {
   content: '';
-  background: url(../images/icons/about.png) 0 0/cover no-repeat;
+  background: url(images/icons/about.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -331,7 +331,7 @@ header .header__nav .header__items .header__item a:hover:after {
 
 .skills .skills__column .skills__title::before {
   content: '';
-  background: url(../images/icons/skill.png) 0 0/cover no-repeat;
+  background: url(images/icons/skill.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -451,7 +451,7 @@ header .header__nav .header__items .header__item a:hover:after {
 
 .education .education__column .education__title::before {
   content: '';
-  background: url(../images/icons/education.png) 0 0/cover no-repeat;
+  background: url(images/icons/education.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -488,7 +488,7 @@ header .header__nav .header__items .header__item a:hover:after {
 
 .code .code__column .code__title::before {
   content: '';
-  background: url(../images/icons/code.png) 0 0/cover no-repeat;
+  background: url(images/icons/code.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 5px;
@@ -523,7 +523,7 @@ header .header__nav .header__items .header__item a:hover:after {
 
 .contact .contact__column .contact__title::before {
   content: '';
-  background: url(../images/icons/contact.png) 0 0/cover no-repeat;
+  background: url(images/icons/contact.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 15px;
