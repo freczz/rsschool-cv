@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="style.css">
    <title>CV</title>
+   <link rel="stylesheet" href="styles/rainbow.css">
 </head>
-
 <body>
    <div class="wrapper">
       <header>
          <div class="container">
             <nav class="header__nav">
-               <a href="#home" class="header__logo">
-                  <div class="header__link">home</div>
-               </a>
                <ul class="header__items">
-                  <li class="header__item"><a href="#skills" class="header__link">skills</a></li>
-                  <li class="header__item"><a href="#education" class="header__link">education</a></li>
-                  <li class="header__item"><a href="#contact" class="header__link">contact</a></li>
+                  <li class="header__item"><a href="#home">home</a></li>
+                  <li class="header__item"><a href="#skills">skills</a></li>
+                  <li class="header__item"><a href="#education">education</a></li>
+                  <li class="header__item"><a href="#contact">contact</a></li>
                </ul>
             </nav>
          </div>
       </header>
       <main>
-         <section class="about">
+         <section class="about ">
             <div class="container">
-               <div class="about__row">
-                  <div class="about__column about__column__main">
-                     <h1 class="about__title" id="#about">about me</h1>
-                     <figure class="about__contact">
-                        <img src="images/face.jpg" alt="undefined" class="about__img">
-                        <figcaption class="about__name">alexey virinskiy</figcaption>
-                        <figcaption class="about__prof">front-end developer</figcaption>
-                     </figure>
-                     <div class="about__link link">
-                        <a href="" class="link__github">
-                           <img src="images/icons/github.svg" alt="">
-                        </a>
-                        <a href="" class="link__telegram">
-                           <img src="images/icons/telegram.png" alt="">
-                        </a>
-                        <a href="" class="link__e-mail">
-                           <img src="images/icons/message.svg" alt="">
-                        </a>
+               <h1 class="about__title" id="#about">about me</h1>
+               <div class="about__row before__line">
+                  <div class="about__column">
+                     <div class="about__column__contact">
+                        <figure class="about__contact">
+                           <img src="images/face.jpg" alt="undefined">
+                           <figcaption class="about__name shadow">Alexey Virinskiy</figcaption>
+                           <figcaption class="about__prof shadow">Front-End Developer</figcaption>
+                        </figure>
+                        <div class="about__link link">
+                           <a href="#" class="link__github">
+                              <img src="images/icons/github.svg" alt="#">
+                           </a>
+                           <a href="#" class="link__telegram">
+                              <img src="images/icons/telegram.png" alt="#">
+                           </a>
+                           <a href="#" class="link__e-mail">
+                              <img src="images/icons/message.svg" alt="#">
+                           </a>
+                        </div>
                      </div>
                   </div>
                   <div class="about__column">
-                     <div class="about__info">
+                     <div class="about__info shadow">
                         <p>I am beginning <i>Front-end Developer</i>, writing <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i>
                            code
                            with the help of <i>Sass</i> and <i>BEM methodology</i>.</p>
@@ -64,71 +63,109 @@
          </section>
          <section class="skills">
             <div class="container">
-               <div class="skills__row">
-                  <div class="skills__column">
-                     <h2 class="skills__title" id="#skills">skills</h2>
-                     <ul class="skills__items">
-                        <li class="skills__item item">
-                           <div class="item__info">
-                              <div class="item__title">html</div>
-                              <div class="item__percent">90%</div>
-                           </div>
-                           <div class="item__progress"></div>
-                        </li>
-                        <li class="skills__item item">
-                           <div class="item__info">
-                              <div class="item__title">css, scss</div>
-                              <div class="item__percent">80%</div>
-                           </div>
-                           <div class="item__progress"></div>
-                        </li>
-                        <li class="skills__item item">
-                           <div class="item__info">
-                              <div class="item__title">javascript</div>
-                              <div class="item__percent">10%</div>
-                           </div>
-                           <div class="item__progress"></div>
-                        </li>
-                        <li class="skills__item item">
-                           <div class="item__info">
-                              <div class="item__title">figma, photoshop, illustrator</div>
-                              <div class="item__percent">60%</div>
-                           </div>
-                           <div class="item__progress"></div>
-                        </li>
-                        <li class="skills__item">english (a2)</li>
-                     </ul>
-                     <p class="skills__also">also:</p>
-                     <ul class="skills__items">
-                        <li class="skills__items">Engineering</li>
-                        <li class="skills__items">BEM methodology</li>
-                        <li class="skills__items">French (A2)</li>
-                        <li class="skills__items">Social skills</li>
-                     </ul>
-                  </div>
+               <div class="skills__column before__line">
+                  <h2 class="skills__title" id="#skills">skills</h2>
+                  <ul class="skills__items">
+                     <li class="skills__item item--black">
+                        <div class="item__info">
+                           <div class="item__title">html</div>
+                           <div class="item__percent">90%</div>
+                        </div>
+                        <div class="item__progress item__progress__html"></div>
+                     </li>
+                     <li class="skills__item item">
+                        <div class="item__info">
+                           <div class="item__title">css, scss</div>
+                           <div class="item__percent">80%</div>
+                        </div>
+                        <div class="item__progress item__progress__css"></div>
+                     </li>
+                     <li class="skills__item item--black">
+                        <div class="item__info">
+                           <div class="item__title">javascript</div>
+                           <div class="item__percent">10%</div>
+                        </div>
+                        <div class="item__progress item__progress__js"></div>
+                     </li>
+                     <li class="skills__item item">
+                        <div class="item__info">
+                           <div class="item__title">figma, photoshop, illustrator</div>
+                           <div class="item__percent">60%</div>
+                        </div>
+                        <div class="item__progress item__progress__fpi"></div>
+                     </li>
+                     <li class="skills__item skills__item__eng">english (a2)</li>
+                  </ul>
+                  <ul class="skills__items items__also">also:
+                     <li class="item__also item--black">Engineering</li>
+                     <li class="item__also">BEM methodology</li>
+                     <li class="item__also item--black">French (A2)</li>
+                     <li class="item__also">Social skills</li>
+                  </ul>
                </div>
             </div>
          </section>
          <section class="education">
             <div class="container">
-               <div class="education__column">
+               <div class="education__column before__line">
                   <h3 class="education__title">education</h3>
-                  <p class="education__text">2019 - 2023 Belarusian State University of Informatics and Radioelectronics
+                  <p class="education__text shadow item--black">2019 - 2023 Belarusian State University of Informatics
+                     and
+                     Radioelectronics
                      (BSUIR), Faculty of Computer-Aided Design</p>
+               </div>
+            </div>
+         </section>
+         <section class="code">
+            <div class="container">
+               <div class="code__column before__line">
+                  <div class="code__title">my code</div>
+                  <div class="code__text">
+                     <pre><code>
+   export default function transform(arr) {
+      if (!Array.isArray(arr)) throw new Error("'arr' parameter must be an instance of the Array!");
+      let list = ["--discard-next", "--discard-prev", "--double-next", "--double-prev"];
+      let copyArr = arr.slice();
+      let result = [];
+      for (let i = 0; i < copyArr.length; i++) {
+         if (!(list.includes(copyArr[i]))) {
+            result.push(copyArr[i]);
+            continue;
+         }
+         switch (copyArr[i]) {
+            case "--discard-next":
+               if (typeof copyArr[i + 1] == "number") {copyArr.splice(i + 1, 1);}
+               continue;
+            case "--discard-prev":
+               if (typeof copyArr[i - 1] == "number") {result.pop();}
+               continue;
+            case "--double-next":
+               if (typeof copyArr[i + 1] == "number") {result.push(copyArr[i + 1]);}
+               continue;
+            case "--double-prev":
+               if (typeof copyArr[i - 1] == "number") {result.push(copyArr[i - 1]);}
+               continue;
+         }
+      }
+      return result;
+   }
+                     </code></pre>
+                  </div>
                </div>
             </div>
          </section>
          <section class="contact">
             <div class="container">
-               <div class="contact__column">
+               <div class="contact__column before__line">
                   <h4 class="contact__title">contact</h4>
                   <ul class="contact__body">
-                     <li class="contact__item">Location: Minsk, Belarus</li>
+                     <li class="contact__item item--black">Location: Minsk, Belarus</li>
                      <li class="contact__item">Phone: <a class="contact__phone" href="">+375 (29) 320-45-39</a></li>
-                     <li class="contact__item">E-mail: <a href="" class="contact__email">alexmilhaylovich@mail.ru</a>
+                     <li class="contact__item item--black">E-mail: <a href=""
+                           class="contact__email">alexmilhaylovich@mail.ru</a>
                      </li>
                      <li class="contact__item"><a href="" class="contact__telegram">Telegram</a></li>
-                     <li class="contact__item"><a href="" class="contact__discord">Discord</a></li>
+                     <li class="contact__item item--black"><a href="" class="contact__discord">Discord</a></li>
                   </ul>
                </div>
             </div>
@@ -136,12 +173,15 @@
       </main>
       <footer>
          <div class="container">
-            <a href="" class="footer__github"><img src="images/icons/github.svg" alt=""></a>
-            <h5 class="footer__text">2021</h5>
-            <a href="" class="footer__rsschool"><img src="images/icons/rs_school.svg" alt=""></a>
+            <div class="footer__body">
+               <a href="" class="footer__github"><img src="images/icons/github.svg" alt=""></a>
+               <h5 class="footer__text">2021</h5>
+               <a href="" class="footer__rsschool"><img src="images/icons/rs_school.svg" alt=""></a>
+            </div>
          </div>
       </footer>
    </div>
+   <script src="highlight.pack.js"></script>
+   <script>hljs.initHighlightingOnLoad();</script>
 </body>
-
 </html>
