@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
    <title>CV</title>
    <link rel="stylesheet" href="styles/rainbow.css">
 </head>
+
 <body>
-   <div class="wrapper">
-      <header>
+   <div class="wrapper" id="home">
+      <header class="header">
          <div class="container">
             <nav class="header__nav">
                <ul class="header__items">
                   <li class="header__item"><a href="#home">home</a></li>
                   <li class="header__item"><a href="#skills">skills</a></li>
                   <li class="header__item"><a href="#education">education</a></li>
+                  <li class="header__item"><a href="#code">code</a></li>
                   <li class="header__item"><a href="#contact">contact</a></li>
                </ul>
             </nav>
          </div>
       </header>
       <main>
-         <section class="about ">
+         <section class="about">
             <div class="container">
-               <h1 class="about__title" id="#about">about me</h1>
+               <h1 class="about__title" id="about">about me</h1>
                <div class="about__row before__line">
                   <div class="about__column">
                      <div class="about__column__contact">
                         <figure class="about__contact">
                            <img src="images/face.jpg" alt="undefined">
-                           <figcaption class="about__name shadow">Alexey Virinskiy</figcaption>
-                           <figcaption class="about__prof shadow">Front-End Developer</figcaption>
+                           <figcaption>
+                              <p class="about__name shadow">Alexey Virinskiy</p>
+                              <p class="about__prof shadow">Front-End Developer</p>
+                              </class=>
                         </figure>
                         <div class="about__link link">
-                           <a href="#" class="link__github">
+                           <a href="https://github.com/freczz" class="link__github">
                               <img src="images/icons/github.svg" alt="#">
                            </a>
-                           <a href="#" class="link__telegram">
+                           <a href="https://t.me/abdelaz1z" class="link__telegram">
                               <img src="images/icons/telegram.png" alt="#">
                            </a>
-                           <a href="#" class="link__e-mail">
+                           <a href="mailto:alexmilhaylovich@mail.ru" class="link__e-mail">
                               <img src="images/icons/message.svg" alt="#">
                            </a>
                         </div>
@@ -61,7 +66,7 @@
                </div>
             </div>
          </section>
-         <section class="skills">
+         <section class="skills" id="skills">
             <div class="container">
                <div class="skills__column before__line">
                   <h2 class="skills__title" id="#skills">skills</h2>
@@ -96,7 +101,8 @@
                      </li>
                      <li class="skills__item skills__item__eng">english (a2)</li>
                   </ul>
-                  <ul class="skills__items items__also">also:
+                  <ul class="skills__items items__also">
+                     <div>also:</div>
                      <li class="item__also item--black">Engineering</li>
                      <li class="item__also">BEM methodology</li>
                      <li class="item__also item--black">French (A2)</li>
@@ -105,7 +111,7 @@
                </div>
             </div>
          </section>
-         <section class="education">
+         <section class="education" id="education">
             <div class="container">
                <div class="education__column before__line">
                   <h3 class="education__title">education</h3>
@@ -116,10 +122,10 @@
                </div>
             </div>
          </section>
-         <section class="code">
+         <section class="code" id="code">
             <div class="container">
                <div class="code__column before__line">
-                  <div class="code__title">my code</div>
+                  <h4 class="code__title">my code</h4>
                   <div class="code__text">
                      <pre><code>
    export default function transform(arr) {
@@ -127,7 +133,7 @@
       let list = ["--discard-next", "--discard-prev", "--double-next", "--double-prev"];
       let copyArr = arr.slice();
       let result = [];
-      for (let i = 0; i < copyArr.length; i++) {
+      for (let i = 0; i &lt copyArr.length; i++) {
          if (!(list.includes(copyArr[i]))) {
             result.push(copyArr[i]);
             continue;
@@ -154,19 +160,21 @@
                </div>
             </div>
          </section>
-         <section class="contact">
+         <section class="contact" id="contact">
             <div class="container">
                <div class="contact__column before__line">
-                  <h4 class="contact__title">contact</h4>
-                  <ul class="contact__body">
-                     <li class="contact__item item--black">Location: Minsk, Belarus</li>
-                     <li class="contact__item">Phone: <a class="contact__phone" href="">+375 (29) 320-45-39</a></li>
-                     <li class="contact__item item--black">E-mail: <a href=""
-                           class="contact__email">alexmilhaylovich@mail.ru</a>
-                     </li>
-                     <li class="contact__item"><a href="" class="contact__telegram">Telegram</a></li>
-                     <li class="contact__item item--black"><a href="" class="contact__discord">Discord</a></li>
-                  </ul>
+                  <h5 class="contact__title">contact</h4>
+                     <ul class="contact__body">
+                        <li class="contact__item item--black">Location: Minsk, Belarus</li>
+                        <li class="contact__item">Phone: <a href="tel:+375293204539" class="contact__phone">+375 (29)
+                              320-45-39</a></li>
+                        <li class="contact__item item--black">E-mail: <a href="mailto:alexmilhaylovich@mail.ru"
+                              class="contact__email">alexmilhaylovich@mail.ru</a>
+                        </li>
+                        <li class="contact__item"><a href="https://t.me/abdelaz1z"
+                              class="contact__telegram">Telegram</a>
+                        </li>
+                     </ul>
                </div>
             </div>
          </section>
@@ -175,13 +183,15 @@
          <div class="container">
             <div class="footer__body">
                <a href="" class="footer__github"><img src="images/icons/github.svg" alt=""></a>
-               <h5 class="footer__text">2021</h5>
+               <h6 class="footer__text">2021</h6>
                <a href="" class="footer__rsschool"><img src="images/icons/rs_school.svg" alt=""></a>
             </div>
          </div>
       </footer>
    </div>
-   <script src="highlight.pack.js"></script>
+   <script src="js/highlight.pack.js"></script>
    <script>hljs.initHighlightingOnLoad();</script>
+   <script src="js/scroll.js"></script>
 </body>
+
 </html>
